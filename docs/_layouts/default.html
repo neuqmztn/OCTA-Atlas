@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <span class="brand-mark">OA</span>
+        <span>
+          <strong>OCTA-Atlas</strong>
+          <small>Research Knowledge Base</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="{{ '/' | relative_url }}">首页</a>
+        <a href="{{ '/guides/' | relative_url }}">常用教程</a>
+        <a href="{{ '/octa-basics/' | relative_url }}">OCTA 基础</a>
+        <a href="{{ '/papers/' | relative_url }}">论文整理</a>
+        <a href="{{ '/ideas/' | relative_url }}">研究思路</a>
+        <a href="{{ '/roadmap/' | relative_url }}">路线图</a>
+        <a href="{{ '/tools/' | relative_url }}">工具资源</a>
+        <a href="{{ '/about/' | relative_url }}">关于</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <p>OCTA-Atlas · 面向 OCTA、血管分析与医学影像智能的课题组知识库。</p>
+    </footer>
+  </body>
+</html>

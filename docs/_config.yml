@@ -1,0 +1,13 @@
+﻿title: OCTA-Atlas
+description: 面向 OCTA、血管分析与医学影像智能的课题组知识库
+lang: zh-CN
+baseurl: "/OCTA-Atlas"
+url: ""
+markdown: kramdown
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
